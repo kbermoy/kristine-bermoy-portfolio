@@ -1,0 +1,47 @@
+body {
+    background-color: #23456a;
+}
+.name {
+    font-size: larger;
+}
+.nav-bar {
+    color: white;
+    font-weight: bold;
+}
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1d2f3e;
+    font-size: larger;
+}
+.nav-bar li {
+    float: right;
+}
+.nav-bar li a {
+    display: block;
+    padding: 40px 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.hover li a:hover {
+    background-color: #004687;
+}
+
+.about-me {
+    color: white;
+}
+
+.self-portrait {
+    border: 6px solid black;
+    width: 300px;
+    text-align: center;
+}
+.self-portrait img {
+    width: 300px;
+    height: 370px;
+    display: inline-block;
+    text-align: center;
+}
