@@ -8,36 +8,91 @@
     </head>
 
     <body>
-        <div class="nav-bar">
-            <ul>
-                <li style="float:left;"> <a class="name">Kristine Bermoy</a> </li>
-                <div class="hover">
-                    <li> <a href="#about-me">About Me</a> </li>
-                    <li> <a href="#work">Work</a> </li>
-                    <li> <a href="#contact-me">Contact Me</a> </li>
-                    <li> <a href="#Resume">Resume</a> </li>
-                </div>
-            </ul>
-        </div>
+      <div class="nav-bar">
+        <nav>
+          <ul>
+            <li style="float:left;"> <a class="name">Kristine Bermoy</a> </li>
+            <div class="hover">
+            <li> <a href="#about-me">About Me</a> </li>
+            <li> <a href="#work">Work</a> </li>
+            <li> <a href="#contact-me">Contact Me</a> </li>
+            <li> <a href="#Resume">Resume</a> </li>
+            </div>
+           </ul>
+        </nav> 
+      </div>
 
-        <section class="self-portrait">
-            <img src="./assets/myself copy.png"/>
-        </section>
+    <!--This is the About Me Sections-->  
+    <div class="style-about-me">
+    <aside id="about-me">
+      <h1 id="about-me-title">About Me</h1>
+    </aside>
+    <section class="about-me">
+      <img class="self-portrait" src="./assets/myself copy.png" alt="self-portrait"/>
+      <p>I am currently on month two of a Coding Bootcamp-- following a Full Stack Curriculm-- at the University of Washington. Expected gradutation is on Febuary 2023-- a 6 month intensive part-time program. After gradutation, I hope to have formed a concrete knowledge with full stack development. I also intend to continue my education at Bellevue College, to earn a Associated in CS, and eventually a Bacheoleors at UW </p>
+      <p>Here are some languages I am currently mastering:
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>           
+      </p>
+      <p>Outside of Code, I enjoy walking in the rain with an umbrella. And I am also into content creation</p>
+    </section>
+    </div>
 
-        <div class="about-me" id="about-me">
-            <section>
-                <h1>About Me</h1>
-                <p>I am currently on month two of a Coding Bootcamp-- following a Full Stack Curriculm-- at the University of Washington. Expected gradutation is on Febuary 2023-- a 6 month intensive part-time program. After gradutation, I hope to have formed a concrete knowledge with full stack development. I also intend to continue my education at Bellevue College, to earn a Associated in CS, and eventually a Bacheoleors at UW </p>
-                <p>Here are some languages I am currently mastering:
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </p>
-                <p>Outside of Code, I enjoy walking in the rain with an umbrella. And I am also into content creation</p>
-            </section>
-        </div>
+    <!--This is the Work Section-->
+    <div class="style-work">
+    <aside id="work">
+      <h1>Work</h1>
+    </aside>
+    <section class="block-imgs">
+      <a href="https://github.com/kbermoy/kristine-bermoy-portfolio" target="_blank">
+       <img id="top-img" src="./assets/space-img-1.jpeg" alt="img-1">
+       <p class="subtitles">Title 1</p>
+      </a>
+      <div class="row">
+        <a href="https://github.com/kbermoy/kristine-bermoy-portfolio" target="_blank">
+          <img id="column-img" src="./assets/space-img-2.jpeg" alt="img-2">
+          <p class="subtitles">Title 2</p>
+        </a>
+        <a href="https://github.com/kbermoy/kristine-bermoy-portfolio" target="_blank">
+          <img id="column-img" src="./assets/space-img-3.jpeg" alt="img-3">
+          <p class="subtitles">Title 3</p>
+        </a>
+      </div>
+      <div class="row">
+        <a href="https://github.com/kbermoy/kristine-bermoy-portfolio" target="_blank">
+          <img id="column-img" src="./assets/space-img-4.jpeg" alt="img-4">
+          <p class="subtitles">Title 4</p>
+        </a>
+        <a href="https://github.com/kbermoy/kristine-bermoy-portfolio" target="_blank">
+          <img id="column-img" src="./assets/space-img-5.jpeg" alt="img-5">
+          <p class="subtitles">Title 5</p>
+        </a>
+      </div>
+    </section>
+    </div>
+
+    <!-- This is the Contact Me Section -->
+    <div class="contact-me">
+      <aside id="contact-me">
+        <h1>Contact<br>Me</h1>
+      </aside>
+      <section class="contact-me-section">
+        <nav>
+          <ul class="contact-me-ul">   <!--change anchor to links-->
+            <li class="contact-me-li"> <a href="#"></a>Email</li>
+            <li class="contact-me-li"> <a href="#"></a>Linkedin</li>
+            <li class="contact-me-li"> <a href="#"></a>GitHub</li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+
+    <footer>
+      <p>Last edit: September 12, 2022</p>
+    </footer>
 
     </body>
 

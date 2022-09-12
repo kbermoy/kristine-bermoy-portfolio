@@ -1,12 +1,29 @@
 body {
     background-color: #23456a;
+    display: block;
+    margin: 0;
 }
+h1 {
+    font-size: 50px;
+    margin-left: 500px;
+}
+#about-me-title {
+    display: inline-block;
+}
+p {
+    font-size: 34px;
+}
+/* This is the navigation bar */
 .name {
-    font-size: larger;
+    font-size: 40px;
 }
 .nav-bar {
     color: white;
     font-weight: bold;
+    display: block;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
 }
 .nav-bar ul {
     list-style-type: none;
@@ -16,9 +33,6 @@ body {
     background-color: #1d2f3e;
     font-size: larger;
 }
-.nav-bar li {
-    float: right;
-}
 .nav-bar li a {
     display: block;
     padding: 40px 50px;
@@ -26,22 +40,120 @@ body {
     text-decoration: none;
     text-align: center;
 }
+.hover {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .hover li a:hover {
     background-color: #004687;
 }
 
+/* This is the main body */
+
+/* This is the About Me Section*/
+.style-about-me {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    padding: 20px;
+}
+aside {
+    border-right: 4px solid darkblue;
+    padding: 200px;
+    color: lightblue;
+    font-size: 24px;
+}
 .about-me {
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3 1 auto;
+    padding: 40px;
+}
+.self-portrait {
+    border: 3px solid black;
+    width: 200px;
+    height: 220px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 50% 50% 50% 50%;
+}
+/* This is the work portion */
+#top-img {
+    width: 1000px;
+    height: 500px;
+}
+img {
+    width: 480px;
+    height: 250px;
+    border: solid pink;
+    /* Create the hover affect on images*/
+    opacity: 1;
+    transition: .5 ease;
+    backface-visibility: hidden;
+}
+.style-work {
+    display: flex;
+    padding: 20px;
+}
+.block-imgs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 40px;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.subtitles {
+    position: relative;
+    bottom: 150px;
+    background-color: pink;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+}
+/* This is the Contact Me Portion */
+.contact-me {
+    display: flex;
+}
+.contact-me-ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 28px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 210px;
+    align-items: center;
+}
+.contact-me-li {
+    display: inline-block;
+    padding: 40px 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 150px;
+    border-bottom: 4px solid darkblue;
+}
+.contact-me-li:hover {
+    background-color: #004687;
+}
+.block-imgs a:hover {
+    opacity: 0.2;
+}
+
+@media only screen and (max-width:1600px) {
+    .hover {
+        flex-direction: column;
+    }
+    .style-about-me, .style-work, .contact-me {
+        flex-direction: column;
+    }
+}
+footer {
     color: white;
 }
 
-.self-portrait {
-    border: 6px solid black;
-    width: 300px;
-    text-align: center;
-}
-.self-portrait img {
-    width: 300px;
-    height: 370px;
-    display: inline-block;
-    text-align: center;
-}
+/* TODO: clean up codes, fix styling (this is not part of the assignmenet */
